@@ -1,0 +1,118 @@
+/* CSS Document */
+/* All comments go between the front slash and asterisk symbols */
+
+body {
+	background-color: #000000;   /* background color */
+	color: #444; /* text color for the entire page */
+}
+
+h1, h2 { 
+	text-align:center;  
+	color: white;/* centers h1 and h2 content */
+	 font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: bold;
+}
+h3 {color: white;
+font-family: "Montserrat", sans-serf;
+font-weight: 500; 
+font-style: bold;
+margin-left: 1rem;
+text-align: left;}
+h4 {color: white;
+font-family: "Montserrat", sans-serf;
+font-weight: 400; 
+font-style: bold;
+margin-left: 1rem;
+text-align: left;}
+
+p {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+	}
+
+/* styles for the "wrapper" div, notice that "wrapper" is preceded by "#" */
+#wrapper {
+	width: 85%;
+	margin: 0 auto;    /* centers wrapper */
+}
+
+/* styles for the "stepTitle" class, notice that "stepTitle" is preceded by a dot */
+.stepTitle{
+	padding:10px;
+	text-align:left;
+	background-color:#76EFDE;
+	font-size: 150%;
+	color: black;
+	border-radius: 20px;
+	 font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+ }
+
+.stepContent{ 
+	background-color: white;
+	padding:7px;
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.stepDescription {
+	flex: 1 1 55%;
+	padding:5px;
+	line-height:145%;
+}
+
+.stepImage {
+	flex: 1 1 40%;
+	padding:5px;
+	text-align: center;
+	border-radius: 20px;
+}
+
+.stepImage img {
+    width:100%;
+    height:auto;
+}
+
+strong {
+  font-weight: 800;
+}
+ul {
+  list-style-type: disc;       /* bullet style */
+  padding-left: 2rem;          /* indent control */
+  margin: 1rem 0;              /* space above/below list */
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #fff;                 /* white text for dark background */
+}
+
+li {
+  margin-bottom: 0.5rem;       /* space between items */
+  padding-left: 0.25rem;
+}
+
+/* Optional: teal bullets to match step titles */
+ul li::marker {
+  color: #76EFDE;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+  .stepContent {
+    flex-wrap: wrap; /* let it stack */
+  }
+
+  .stepDescription,
+  .stepImage {
+    flex: 1 1 100%;
+    width: 100%;
+  }
+}
