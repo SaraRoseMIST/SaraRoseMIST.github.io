@@ -25,7 +25,7 @@ font-family: "Montserrat", sans-serf;
 font-weight: 400; 
 font-style: bold;
 margin-left: 1rem;
-text-align: left;}
+text-align: center;}
 
 p {
   font-family: "Montserrat", sans-serif;
@@ -47,7 +47,6 @@ p {
 	background-color:#76EFDE;
 	font-size: 150%;
 	color: black;
-	border-radius: 20px;
 	 font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   font-weight: 500;
