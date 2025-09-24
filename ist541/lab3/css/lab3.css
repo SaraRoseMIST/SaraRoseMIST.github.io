@@ -1,0 +1,79 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+	text-align: center;
+	color: white;
+	background-color: black;  
+	margin: 0;
+	font-family: "Montserrat", sans-serif;
+}
+h1, h2 {
+	font-family: "Montserrat", sans-serif;
+}
+nav {display: flex; 
+justify-content: center; 
+flex-wrap: wrap; 
+margin: 20px 0;
+gap: 10px;
+	font-family: "Montserrat", sans-serif; 
+}
+nav a {
+	padding: 12px 20px; 
+	background-color: #111;
+	color: #66ccff;
+	text-decoration: none; 
+	border-radius: 8px;
+	font-size: 120%; 
+	transition: all 0.3s ease;
+}
+nav a:hover{
+	background-color: #444;
+	color: #99e6ff; 
+	transform: scale(1.05);
+}
+footer {
+  margin-top: 20px;       
+  padding: 10px;
+  background-color: #111; 
+  color: #ccc;          
+  font-size: 85%;
+  text-align: center;
+  border-top: 1px solid #222; 
+}
+
+footer a {
+  color: #66ccff;        
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #99e6ff;        
+}
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column; 
+    align-items: center;
+  }
+
+  nav a {
+    width: 80%;  
+	  text-align: center;
+	  font-size: 110%;
+  }
+	 h1 {
+    font-size: 150%;
+  }
+
+  h2 {
+    font-size: 120%;
+  }
+}
+
+@media (max-width: 480px) {
+  nav a {
+    width: 95%;             
+    font-size: 100%;
+    padding: 10px;
+  }
+}
