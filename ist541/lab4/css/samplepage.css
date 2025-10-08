@@ -28,6 +28,12 @@ button {
   font-style: italic;
   color: #99e6ff;
 }
+#guideInfo {
+  margin-top: 15px;
+  font-style: italic;
+  color: #66ccff;
+  display: none;
+}
 
 nav {
   display: flex;

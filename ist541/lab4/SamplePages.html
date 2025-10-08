@@ -19,10 +19,11 @@
 	<a href="page4.html">Quiz</a>
 		<a href="../lab4/SamplePages.html">Sample Pages</a>
 	</nav>
-	    <p>This sample page demonstrates how interactive visuals can help guide new instructional designers. Hover over the images below to see more detail on each step.</p>
+	    <p>This sample page demonstrates how interactive visuals can help guide new instructional designers. Hover over the images below to see more detail on each step.Click the page title above to reveal more about what a field guide really is.</p>
 
     <button id="revealTip">How to Peer Review Sample Pages</button>
     <div id="tipBox"></div>
+	  <div id="guideInfo"></div>
 
    <div class="image-set">
   <img id="image1" src="img/step1.png" alt="Sample Page 1">
@@ -35,7 +36,16 @@
 
   <script>
   $(document).ready(function(){
-	  
+	$("#mainTitle").click(function(){
+  $(this).css({
+    "color": "#99e6ff",
+    "font-size": "2em",
+    "transition": "all 0.4s ease"
+  });
+
+  $("#guideInfo").html("📘 This field guide provides practical, visual, and step-by-step tools to support new instructional designers bridge the gap from theories learned to implementing them in the real world.").fadeIn();
+});
+  	  
 	    $("#revealTip").click(function(){
       $("#tipBox").html("📝 Reviewing a sample page? Look for clear learning objectives, a logical structure, and visuals that actually help explain the content. Would this make sense to someone brand new to the field?");
   });
