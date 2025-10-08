@@ -1,0 +1,173 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+ text-align: center;
+  color: white;
+  background-color: black;
+  margin: 0;
+  padding: 20px; /* ADD this to replace #wrapper padding */
+  font-family: "Montserrat", sans-serif;
+}
+
+h1, h2 {
+  font-family: "Montserrat", sans-serif;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #264653;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+  border-radius: 6px;
+}
+
+#tipBox {
+  margin-top: 15px;
+  font-style: italic;
+  color: #99e6ff;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 20px 0;
+  gap: 10px;
+}
+
+nav a {
+  padding: 12px 20px;
+  background-color: #111;
+  color: #66ccff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 120%;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #444;
+  color: #99e6ff;
+  transform: scale(1.05);
+}
+
+.image-set {
+  margin-bottom: 20px;
+}
+.image-set img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+#image1,
+#image2 {
+  width: 60%;
+  max-width: 500px;
+  height: auto;
+  margin-bottom: 10px;
+  border: 2px solid #333;
+}
+
+footer {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #111;
+  color: #ccc;
+  font-size: 85%;
+  text-align: center;
+  border-top: 1px solid #222;
+}
+
+footer a {
+  color: #66ccff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #99e6ff;
+}
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav a {
+    width: 80%;
+    text-align: center;
+    font-size: 110%;
+  }
+
+  h1 {
+    font-size: 150%;
+  }
+
+  h2 {
+    font-size: 120%;
+  }
+
+  .detailImage {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  nav a {
+    width: 95%;
+    font-size: 100%;
+    padding: 10px;
+  }
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 20px 0;
+  gap: 10px;
+  font-family: "Montserrat", sans-serif;
+}
+
+nav a {
+  padding: 12px 20px;
+  background-color: #111;
+  color: #66ccff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 120%;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #444;
+  color: #99e6ff;
+  transform: scale(1.05);
+}
+
+/* Add nav media queries only if not already present */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav a {
+    width: 80%;
+    text-align: center;
+    font-size: 110%;
+  }
+}
+
+@media (max-width: 480px) {
+  nav a {
+    width: 95%;
+    font-size: 100%;
+    padding: 10px;
+  }
+}
+
