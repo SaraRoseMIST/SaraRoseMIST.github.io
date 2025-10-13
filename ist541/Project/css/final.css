@@ -41,11 +41,13 @@ button:hover {
   display: none;
 }
 #wrapper {
-	width:1000px;
-	padding: 20px;
-	margin:0 auto;         /* centers wrapper */
- 	text-align:center;
-	background-color: rgba(0, 0, 0, 0.6);  
+  max-width: 1000px;
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  box-sizing: border-box;
 }
 #wrapper ul, #wrapper ol {
   text-align: left;
@@ -151,26 +153,38 @@ html, body {
   padding: 0;
 }
 @media (max-width: 768px) {
-  nav {
-    flex-direction: column; 
-    align-items: center;
+  body {
+    font-size: 16px;
   }
 
-  nav a {
-    width: 80%;  
-	  text-align: center;
-	  font-size: 110%;
+  #wrapper {
+    width: 95%;
+    padding: 15px;
   }
-	 h1 {
-    font-size: 150%;
+
+  h1 {
+    font-size: 1.6em;
   }
 
   h2 {
-    font-size: 120%;
+    font-size: 1.3em;
   }
-	.detailImage {
+
+  nav a {
+    font-size: 1em;
     width: 100%;
-    height: auto;
+    padding: 10px;
+  }
+
+  .audio-caption {
+    font-size: 0.9em;
+    padding: 0 10px;
+  }
+
+  .image-set img,
+  #image1,
+  #image2 {
+    width: 100%;
   }
 }
 
@@ -206,4 +220,7 @@ nav a:hover {
   color: #99e6ff;
   transform: scale(1.05);
 }
-
+video, audio {
+  max-width: 100%;
+  height: auto;
+}
