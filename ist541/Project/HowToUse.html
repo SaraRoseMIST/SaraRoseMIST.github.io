@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>HowToUse</title>
+<title>The ID Field Guide - Sara Rose</title>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"><link href="css/final.css" rel="stylesheet" type="text/css">
@@ -16,37 +16,80 @@
 	</header>
 	<nav>
 	<a href="../Project/index.html">Home</a>
-	<a href="../Project/suggestions.html">Suggestions</a>
-	<a href="../Project/timeline.html">Timeline</a>
-	<a href="../Project/quiz.html">Quiz</a>
-		<a href="../Project/SamplePages.html">Sample Pages</a>
 		<a href="../Project/HowToUse.html">How To Use</a>
+		<a href="../Project/minikit.html">Mini Kit</a>
+		<a href="../Project/quiz.html">Quiz</a>
+		<a href="../Project/SamplePages.html">Sample Pages</a>
 		<a href="../Project/about.html">About</a>
 	</nav>
 	<br><br>
-	<h1>How to Use The Field Guide</h1>
-  <p>The Instructional Designers’ Field Guide is not meant to be read linearly or memorized like a textbook. It’s a flexible, evolving toolkit — designed to support real-world design challenges as they arise. Whether you're planning a course, revising training materials, or exploring new tools, this guide is made to meet you where you are. The videos below offer a glimpse into how the Field Guide can serve your process, both in print and online, with strategies that are modular, practical, and ready to use.</p>
+	<h2>How to Use The Field Guide</h2>
+  <p><strong>The Instructional Designers’ Field Guide</strong> is designed to be a practical, non-linear resource that adapts to your workflow. Rather than a traditional textbook, it’s built as a modular toolkit - something you can dip into as challenges arise in your instructional design work. This page offers a preview of how the guide is intended to function, what design choices support that approach, and what tools and strategies will be included when the full version is released.</p>
+		
+		<section class="step-guide">
+  <h3>What You'll Learn From This Preview:</h3>
 
-  <h2>Built for Real-World Workflow</h2>
-		<p><em>A guide that fits how you work — adaptable, modular, and ready when you are.</em></p>
-  <video controls width="640">
-    <source src="video/howtousethefieldguide.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
+  <details>
+    <summary class="stepTitle">What Is The Field Guide?</summary>
+    <div class="stepContent">
+      <div class="stepDescription">
+        <p><strong>The Instructional Designers’ Field Guide</strong> is a research-informed, multimedia-supported toolkit designed to help early-career instructional designers bridge the gap between theory and practice. Developed as part of a master’s capstone, it combines literature review, qualitative research, and applied design strategies into an evolving, accessible resource.</p>
+          </div>
+      <div class="stepImage">
+        <img src="img/step1.png" alt="Field Guide on desk with sticky notes and laptop">
+      </div>
+    </div>
+  </details>
 
-  <br><br>
-
-  <h2>From Research to Ready</h2>
-		<p><em>From survey to solution — a behind-the-scenes look at turning insights into action.</em></p>
-  <video controls width="640">
-    <source src="video/fromstudytofieldguide.mp4" type="video/mp4">
+  <details>
+    <summary class="stepTitle">What Challenges Does It Address?</summary>
+    <div class="stepContent">
+      <div class="stepDescription">
+        <p>Early-career instructional designers often face unclear expectations, tool fatigue, and difficulty applying academic theory in practice. Based on both literature and survey feedback, this guide is structured around real-world design pain points — making it easier to navigate challenges as they come up.</p>
+       </div>
+	      <div class="stepVideo">
+    <h4>From Research to Ready</h4>
+    <video controls>
+      <source src="video/fromstudytofieldguide.mp4" type="video/mp4">
       Your browser does not support the video tag.
-  </video>
-	
+    </video>
+      </div>
+		 </div>
+      </details>
+
+  <details>
+    <summary class="stepTitle">How to Use What's Included</summary>
+    <div class="stepContent">
+      <div class="stepDescription">
+        <p>Each section provides practical information, tools, best practices and more. This includes checklist, planning worksheets, or sample scripts — to use right away. Tools are available online to print and fill out. Be sure to check back on the website often for updates!</p>
+      </div>
+      <div class="stepVideo">
+    <h4>How to Use the Field Guide</h4>
+    <video controls>
+      <source src="video/howtousethefieldguide.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+    </div>
+  </details>
+
 	<footer>
   <p>More at <a href="https://www.IDFieldGuide.com" target="_blank">www.IDFieldGuide.com</a></p>
 		
 </footer>
-	</div>
+			</div>
+	<script>
+  const allDetails = document.querySelectorAll("details");
+
+  allDetails.forEach((targetDetail) => {
+    targetDetail.addEventListener("click", () => {
+      allDetails.forEach((detail) => {
+        if (detail !== targetDetail) {
+          detail.removeAttribute("open");
+        }
+      });
+    });
+  });
+</script>	
 </body>
 </html>
